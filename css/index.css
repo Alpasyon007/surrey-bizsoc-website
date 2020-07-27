@@ -1,0 +1,13 @@
+.navbar :hover {
+  background: none !important;
+}
+
+.header {
+    background-image: url("../img/campus-aerial-photo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      /* Set a specific height */
+    height: 1440px;
+}
