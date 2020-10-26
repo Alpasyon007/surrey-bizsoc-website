@@ -1,192 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<!-- Font Awsome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">     
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="../css/header.css">	         
-		<link rel="stylesheet" href="../css/events.css">
-	</head>
-	<body>
-		<!-- Header -->
-		<div class="container-fluid">
-			<div class="header-img row justify-content-center">
-				<h1 class="align-self-center text-white font-weight-bold text-uppercase" style="font-size: 72px;">Hello</h1>
-			</div> 
-		</div>
-		  
-		<div id="header"></div>
-		<!-- Header -->
 
-		<!--Your content start here-->
-		<div class="container py-5">
+<head id="head"></head>
 
-			<!-- For Demo Purpose -->
-			<!-- <header class="text-center text-white mb-5">
-			  <h1 class="display-4">Bootstrap Calendar</h1>
-			  <p class="font-italic mb-0">A nicely-designed Bootstrap calendar widget. This calendar is just a for design purpose, you can make it work.</p>
-			  <p class="font-italic">Snippet By <a href="https://bootstrapious.com" class="text-white">
-				  <u>Bootstrapious</u></a>
-			  </p>
-			</header> -->
-		  
-		  
-			<!-- Calendar -->
-			<div class="calendar shadow bg-white p-5">
-			  <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
-				<h2 class="month font-weight-bold mb-0 text-uppercase">December 2019</h2>
-			  </div>
-			  <ol class="day-names list-unstyled">
-				<li class="font-weight-bold text-uppercase">Sun</li>
-				<li class="font-weight-bold text-uppercase">Mon</li>
-				<li class="font-weight-bold text-uppercase">Tue</li>
-				<li class="font-weight-bold text-uppercase">Wed</li>
-				<li class="font-weight-bold text-uppercase">Thu</li>
-				<li class="font-weight-bold text-uppercase">Fri</li>
-				<li class="font-weight-bold text-uppercase">Sat</li>
-			  </ol>
-		  
-			  <ol class="days list-unstyled">
-				<li>
-				  <div class="date">1</div>
-				  <div class="event bg-success">Event with Long Name</div>
-				</li>
-				<li>
-				  <div class="date">2</div>
-				</li>
-				<li>
-				  <div class="date">3</div>
-				</li>
-				<li>
-				  <div class="date">4</div>
-				</li>
-				<li>
-				  <div class="date">5</div>
-				</li>
-				<li>
-				  <div class="date">6</div>
-				</li>
-				<li>
-				  <div class="date">7</div>
-				</li>
-				<li>
-				  <div class="date">8</div>
-				</li>
-				<li>
-				  <div class="date">9</div>
-				</li>
-				<li>
-				  <div class="date">10</div>
-				</li>
-				<li>
-				  <div class="date">11</div>
-				</li>
-				<li>
-				  <div class="date">12</div>
-				</li>
-				<li>
-				  <div class="date">13</div>
-				  <div class="event all-day begin span-2 bg-warning">Event Name</div>
-				</li>
-				<li>
-				  <div class="date">14</div>
-				</li>
-				<li>
-				  <div class="date">15</div>
-				  <div class="event all-day end bg-warning">Event Name</div>
-				</li>
-				<li>
-				  <div class="date">16</div>
-				</li>
-				<li>
-				  <div class="date">17</div>
-				</li>
-				<li>
-				  <div class="date">18</div>
-				</li>
-				<li>
-				  <div class="date">19</div>
-				</li>
-				<li>
-				  <div class="date">20</div>
-				</li>
-				<li>
-				  <div class="date">21</div>
-				  <div class="event bg-primary">Event Name</div>
-				  <div class="event bg-success">Event Name</div>
-				</li>
-				<li>
-				  <div class="date">22</div>
-				  <div class="event bg-info">Event with Longer Name</div>
-				</li>
-				<li>
-				  <div class="date">23</div>
-				</li>
-				<li>
-				  <div class="date">24</div>
-				</li>
-				<li>
-				  <div class="date">25</div>
-				</li>
-				<li>
-				  <div class="date">26</div>
-				</li>
-				<li>
-				  <div class="date">27</div>
-				</li>
-				<li>
-				  <div class="date">28</div>
-				</li>
-				<li>
-				  <div class="date">29</div>
-				</li>
-				<li>
-				  <div class="date">30</div>
-				</li>
-				<li>
-				  <div class="date">31</div>
-				</li>
-				<li class="outside">
-				  <div class="date">1</div>
-				</li>
-				<li class="outside">
-				  <div class="date">2</div>
-				</li>
-				<li class="outside">
-				  <div class="date">3</div>
-				</li>
-				<li class="outside">
-				  <div class="date">4</div>
-				</li>
-			  </ol>
+<body style="font-size: 16px; font-family: 'Montserrat', sans-serif;">
+	<!-- Header -->
+	<div class="container-fluid">
+		<div class="row header-img inset-shadow">
+			<div class="align-self-center col-12">
+				<h1 class=" text-center font-weight-bold text-uppercase"
+					style="font-size: 72px; font-family: 'Cinzel', serif; color: white; text-shadow: 2px 2px black;">
+					our events</h1>
+
+				<!-- Social Media Links -->
+				<div class="row justify-content-center">
+					<ul id="social" class="list-inline mt-4">
+					</ul>
+				</div>
+				<!-- Social Media Links -->
+
 			</div>
-		  </div>
-		<!--Your content end here-->
+		</div>
+	</div>
 
-		<!-- Footer -->
-		<div id="footer"></div>
-		<!-- Footer -->
+	<div id="header"></div>
+	<!-- Header -->
 
-		<!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		
-		<!-- Include Header & Footer -->
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script>
-			$(function(){
+	<!--Page Content-->
+
+	<!-- Events Pages Buttons -->
+	<div class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-md-4 text-center pb-2">
+				<a href="/pages/socials.html" type="button"
+					class="btn btn-lg btn-outline-light text-uppercase"><strong>social events</strong></a>
+			</div>
+			<div class="col-md-4 text-center pb-2">
+				<a href="/pages/future_events.html" type="button"
+					class="btn btn-lg btn-outline-light text-uppercase"><strong>upcoming events</strong></a>
+			</div>
+			<div class="col-md-4 text-center pb-2">
+				<a href="/pages/past_events.html" type="button"
+					class="btn btn-lg btn-outline-light text-uppercase"><strong>past events</strong></a>
+			</div>
+		</div>
+	</div>
+	<!-- Events Pages Buttons -->
+
+	<!-- YouTube Livestream Embed -->
+	<div class="container py-5">
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item"
+				src="https://www.youtube.com/embed/live_stream?channel=UCg6hpdBxlGbqkj_wH77Ew1w" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
+	</div>
+	<!-- YouTube Livestream Embed -->
+
+	<!--Page Content-->
+
+	<!-- Footer -->
+	<div id="footer"></div>
+	<!-- Footer -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
+	<!-- Include Header & Footer -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(function () {
+			$("#head").load("../head.html");
 			$("#header").load("../header.html");
 			$("#footer").load("../footer.html");
-			});
-		</script>
-		<!-- Include Header & Footer -->
+			$("#social").load("../social_media.html");
+		});
+	</script>
+	<!-- Include Header & Footer -->
 
-	</body>
+</body>
+
 </html>

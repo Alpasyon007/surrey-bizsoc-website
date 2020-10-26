@@ -61,25 +61,25 @@ catch (\Exception $e)
 }
 
 
-// if requested by AJAX request return JSON response
-// if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-//     $encoded = json_encode($responseArray);
+if requested by AJAX request return JSON response
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    $encoded = json_encode($responseArray);
 
-//     header('Content-Type: application/json');
+    header('Content-Type: application/json');
 
-//     echo $encoded;
-// }
-// // else just display the message
-// else {
-//     echo $responseArray['message'];
-// }
-
-if ($responseArray['type'] == 'success') {
-    // success redirect
-    // header('Location: http://alpboraorgun.com/success.html#contact');
+    echo $encoded;
 }
+// else just display the message
 else {
-    //error redirect
-    // header('Location: http://alpboraorgun.com/danger.html#contact');
+    echo $responseArray['message'];
 }
+
+// if ($responseArray['type'] == 'success') {
+//     // success redirect
+//     header('Location: https://surreybusinesssociety.co.uk/pages/contact.html');
+// }
+// else {
+//     //error redirect
+//     header('Location: https://surreybusinesssociety.co.uk/pages/contact.html');
+// }
 

@@ -1,0 +1,7 @@
+# activate HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://surreybusinesssociety.co.uk/$1 [R=301,L]
+
+#specify character coding
+AddDefaultCharset utf-8 

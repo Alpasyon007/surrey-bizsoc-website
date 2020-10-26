@@ -1,0 +1,22 @@
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- Font Awsome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">     
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../css/header.css">  
+<link id="bodyCSS" rel="stylesheet" href="">
+<link rel="stylesheet" href="../css/footer.css">
+
+<script>
+    var URL = window.location.pathname; // Gets page name
+    var page = URL.substring(URL.lastIndexOf('/') + 1).slice(0, -5);
+    if(page == "") {
+        page = "index";
+    } 
+    $("#bodyCSS").attr("href", "../css/"+page+".css");
+</script>

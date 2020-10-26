@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="../css/header.css">	      
-		<link rel="stylesheet" href="../css/contact.css">   
-	</head>
-	<body>
+	<head id="head"></head>
+	<body style="font-size: 16px; font-family: 'Montserrat', sans-serif;">
 		<!-- Header -->
 		<div class="container-fluid">
-			<div class="header-img row justify-content-center">
-				<h1 class="align-self-center text-white font-weight-bold text-uppercase" style="font-size: 72px;">Hello</h1>
-			</div> 
+			<div class="row header-img inset-shadow">
+				<div class="align-self-center col-12">
+					<h1 class=" text-center font-weight-bold text-uppercase"
+						style="font-size: 72px; font-family: 'Cinzel', serif; color: rgb(11,29,75); text-shadow: 6px 2px #ebd065;">
+						contact us</h1>
+	
+					<!-- Social Media Links -->
+					<div class="row justify-content-center">
+						<ul class="list-inline mt-4">
+							<li class="list-inline-item"><a href="https://twitter.com/SurreyBizSoc" target="_blank" title="twitter"><i
+										class="fab fa-2x fa-twitter" style="color: rgb(11,29,75); text-shadow: 2px 2px #ebd065;
+										"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.facebook.com/SurreyBusinessSociety/" target="_blank" title="facebook"><i
+										class="fab fa-2x fa-facebook"
+										style="color: rgb(11,29,75); text-shadow: 2px 2px #ebd065;"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/surreybusinesssociety/?hl=en" target="_blank" title="instagram"><i
+										class="fab fa-2x fa-instagram"
+										style="color: rgb(11,29,75); text-shadow: 2px 2px #ebd065;"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.youtube.com/channel/UCg6hpdBxlGbqkj_wH77Ew1w?app=desktop" target="_blank" title="youtube"><i
+										class="fab fa-2x fa-youtube"
+										style="color: rgb(11,29,75); text-shadow: 2px 2px #ebd065;"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/company/ussu-business-school-society/" target="_blank" title="linkedin"><i
+										class="fab fa-2x fa-linkedin"
+										style="color: rgb(11,29,75); text-shadow: 2px 2px #ebd065;"></i></a></li>
+						</ul>
+					</div>
+					<!-- Social Media Links -->
+	
+				</div>
+			</div>
 		</div>
 		  
 		<div id="header"></div>
 		<!-- Header -->
 
-		<!--Your content start here-->
+		<!--Page Content-->
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="card mt-5 mb-5" style="width: 36rem;">
@@ -29,11 +47,10 @@
 						<form id="contact-form" method="post" action="contact.php" role="form">
 							<div class="messages"></div>
 							<div class="controls">
-						
 								<div class="row">
 									<div class="col-md-12">
 										<div class="form-group">
-											<label for="form_name">Firstname<span class="text-danger">*</span></label>
+											<label for="form_name">First Name<span class="text-danger">*</span></label>
 											<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
 											<div class="help-block with-errors"></div>
 										</div>
@@ -42,8 +59,22 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="form-group">
-											<label for="form_lastname">Lastname<span class="text-danger">*</span></label>
+											<label for="form_lastname">Last Name<span class="text-danger">*</span></label>
 											<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="form_need">Please specify<span class="text-danger">*</span></label>
+											<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+												<option value=""></option>
+												<option value="Student">Student</option>
+												<option value="Company">Company</option>
+												<option value="Other">Other</option>
+											</select>
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
@@ -65,7 +96,7 @@
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-12">
 										<input type="submit" class="btn btn-success btn-send" value="Send message">
 										<span class="text-danger">*</span> These fields are required.
 									</div>
@@ -76,8 +107,7 @@
 				</div>
 			</div>	
 		</div>
-		
-		<!--Your content end here-->
+		<!--Page Content-->
 
 		<!-- Footer -->
 		<div id="footer"></div>
@@ -89,15 +119,16 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		
-		<!-- Include Header & Footer -->
+		<!-- Include Head, Header & Footer -->
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script>
 			$(function(){
-			$("#header").load("../header.html");
-			$("#footer").load("../footer.html");
+				$("#head").load("../head.html");
+				$("#header").load("../header.html");
+				$("#footer").load("../footer.html");
 			});
 		</script>
-		<!-- Include Header & Footer -->
+		<!-- Include Head, Header & Footer -->
 
 	</body>
 </html>
